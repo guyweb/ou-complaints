@@ -131,37 +131,78 @@
               
               <!-- @CONTENT-BEGIN -->
 
-              <p><a href="http://test.experienceux.co.uk/7EO6RT/#p=what_stage_are_you_at_">SOURCE MATERIAL</a></p>
+			  <div class="progress-bar"><span class="progress" style="width:0%;">0%</span></div>
+
+              <!--<p><a href="http://test.experienceux.co.uk/7EO6RT/#p=what_stage_are_you_at_">SOURCE MATERIAL</a></p>-->
 
               <div>
+              
                 <p>If you’re unhappy with our service, we’d like to hear about it so we can try to put things right. Find out more about how we handle complaints in our <a href="http://www.open.ac.uk/students/charter/essential-documents/complaints-and-appeals">Student complaints and appeals procedure</a></p>
 
-                <h2><a href="categories.html">Make a new complaint or appeal</a></h2>
+                <h2>Make a new complaint or appeal</h2>
                 <p>Start here to get straight to the team that can help resolve your concern.</p>
-                <p><a href="categories.html">Start new complaint or appeal</a></p>
+                <p><a href="categories.html" class="ou-button2">Start new complaint or appeal</a></p>
+              
               </div>
+              
 
               <div>
+              
                 <h2>Follow up an existing complaint or appeal</h2>
 
                 <p>Have you already contacted the OU about your complaint or appeal, and received an outcome message? If you want to take things further, use your reference number to continue here.</p>
+                
+                
+                
+                <div class="wizard-form wizard-ouforms">
+                    <div class="ouforms">
+                        <form method="POST" action="" accept-charset="UTF-8">
+                        <input name="_token" type="hidden" value="">
+                        
+                        <fieldset>
+                          <div class="field-container field-input no-title " id="fieldContainer_ref">
+                              <div class="input-container input-text">
+                                <div class="label-container">
+                                  <label for="ref" id="fieldLabel-ref" aria-required="true">Reference number <span class="validation_label required">Required</span></label>
+                                </div>
+                                <input id="ref" placeholder="eg. 1-0123456789" aria-labelledby="fieldLabel-email" name="ref" type="text">
+                                <p class="ouforms-helper-toggle"><a href="#">Where can I find this?</a></p>
+                                <div class="ouforms-helper-text">
+                                <p>You will have received an outcome email within 10 days of making your complaint or appeal to the OU.  You should have been provided with a reference number either in the subject line or at in the response itself. It starts with a 1-, followed by 10 digits, eg 1-3215436789.  Thank you for  helping us to follow up your complaint or appeal efficiently.</p>
+                                </div>
+                                
+                              </div>
+                          </div>
+                          
+                          
+                        <input type="submit" value="Continue" class="ou-button-last">
+                        
+                        </fieldset>
+                        
+                        
+                        </form>
+                  </div>
+                </div>
+   
+                
+                
+                
+<!--             
+<p>(reference number box, only to accept input of 1- followed by 10 digits. This number should also be pulled through to the stage 2 complaints/appeals form along with PI ect once the user clicks through)</p>
+-->
 
-                <p>(reference number box, only to accept input of 1- followed by 10 digits. This number should also be pulled through to the stage 2 complaints/appeals form along with PI ect once the user clicks through)</p>
-
-                <p>(button – ‘Continue’ – links to stage 2 complaint/appeal form)
-                ‘Where can I find this?’ info link under reference box. When clicked displays:</p>
-
-                <p>You will have received an outcome email within 10 days of making your complaint or appeal to the OU.  You should have been provided with a reference number either in the subject line or at in the response itself. It starts with a 1-, followed by 10 digits, eg 1-3215436789.  Thank you for  helping us to follow up your complaint or appealefficiently.</p>
+                
               </div>
 
               <div>
+              
                 <h2>Feedback</h2>
 
-                <p>There are some things that we can’t change for individual students, such as University policy. That doesn’t mean that we don’t welcome your input. To influence a review or highlight concerns with a policy, or to compliment a University department or individual member of staff please submit feedback. </p>
+                <p>There are some things that we can’t change for individual students, such as University policy. That doesn’t mean that we don’t welcome your input. To influence a review or highlight concerns with a policy, or to compliment a University department or individual member of staff please <a href="#">submit feedback</a>.</p>
+              
               </div>
 
-              <p>[Progress bar *------ ]</p>
-
+            
               <!-- @CONTENT-END -->
             
             </div>
@@ -175,6 +216,21 @@
   <script src="http://www2.open.ac.uk/students/help/js/jquery-ui-1.10.3.custom.min.js"></script>
   <script src="http://www2.open.ac.uk/students/help/js/main.js"></script>
   <!-- /Application JS -->
+
+
+    <!-- added by ST temporary -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        
+        $(".ouforms-helper-text").hide();
+        $(".ouforms-helper-toggle").click(function(){
+            $(".ouforms-helper-text").slideToggle("fast");
+        return false;
+        })
+        
+    });    
+    </script>
 
 </body>
 </html>

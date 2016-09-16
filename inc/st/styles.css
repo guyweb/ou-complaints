@@ -6254,14 +6254,18 @@ div.hc-tags ul li a {padding:0.5em 1em; background-color: #eee; text-decoration:
 div.hc-tags ul li a:hover {background-color: #f8f8f8;}
 
 
-a.ou-button, a.ou-button2, input[type=submit], button.btn-submit, .ou-feedback-widget-message button {
-border:none;
-text-decoration: none;
-box-shadow:none;
-padding:0.5em;
+a.ou-button, a.ou-button2, 
+input[type=submit], 
+button.btn-submit, 
+.ou-feedback-widget-message button {
+	border:none;
+	text-decoration: none;
+	box-shadow:none;
+	padding:0.5em;
 }
 
 a.ou-button:hover, button.btn-submit:hover {border:none;}
+
 
 div.search .aa-input, input#helpcentreSearch {width:240px; padding:0.6em;}
 
@@ -6273,3 +6277,102 @@ div#ou-region0 {float:left; clear:both; width:100%; height:auto;}
 
 
 /* EOF */
+
+
+
+/* 
+ * 15-09-16: Stephen Turvey
+ * Additions for complaints work
+*/
+
+
+/* text */
+
+.ouforms-helper-toggle,
+.ouforms-helper-text {margin:10px 0 0 0;}
+
+.ouforms-helper-text p:last-child {margin:0;}
+
+.ou-tel {
+	display:inline-block;
+	padding:15px 20px;
+	font-weight:bold;
+	font-size:1.6em;
+	border:1px solid #ddd;
+	background-color:#fff;
+	color:#000;
+}
+
+
+/* buttons */
+
+a.ou-button2:hover,
+input[type=submit]:hover {
+	border:none; 
+	background-color:#3F644A;
+}
+
+.ou-button-last,
+input.ou-button-last {margin-bottom:8px;}
+
+a.ou-button-back {margin:20px 0 0 0;}
+
+a.ou-button-back:hover {background-color:#222;}
+
+
+/* progress bar */
+
+.progress-bar {
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-color: #ddd;
+	color:#000;
+	margin:0 0 20px 0;
+}
+
+.progress {
+    display: inline-block;
+    height: 6px;
+    background-color: #00CC33;
+	color:#000;
+    float: left;
+    text-indent: -5000em;
+}
+
+
+/* boxes */
+
+.box-wizard {
+    padding: 1.5em 2em;
+    background-color: #E6EBF3;
+    border: none;
+	border-radius:0.5em;
+    margin: 1.5em 0;
+}
+
+.box-wizard p:last-child {margin:0;}
+
+.box-wizard h2 {font-size:1.4em;}
+
+
+/* lists */
+
+.ou-list-large,
+.ou-list-large li {
+	margin:0;
+	padding:0;
+	list-style:none;	
+}
+
+.ou-list-large li {
+	font-size:1.2em;
+	padding:5px 0;
+}
+
+.ou-list-large a {
+	text-decoration:none;
+}
+
+
+
