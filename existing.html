@@ -130,50 +130,58 @@
             <div id="ou-content" class="ou-content">
               
               <!-- @CONTENT-BEGIN -->
-
-              <!--<p><a href="http://test.experienceux.co.uk/7EO6RT/#p=call_us">SOURCE MATERIAL</a></p>-->
-
-              <div class="ou-progress">
-                  
-                  <div class="ou-progress-description">
-                    <div class="ou-progress-item"><a href="start.html">Start</a></div>
-                    <div class="ou-progress-item"><a href="categories.html">Select category</a></div>
-                    <div class="ou-progress-item"><a href="sub-categories.html">Select options</a></div>
-                    <div class="ou-progress-item"><a href="contact-options.html">Contact</a></div>
-                    <div class="ou-progress-item">Finish</div>
-                  </div>
-              
-              <div class="ou-progress-bar"><span class="ou-progress-pc" style="width:100%;" role="progressbar" aria-valuenow="100"
-  aria-valuemin="0" aria-valuemax="100">100%</span></div>
-              
-              </div> <!-- end ou-progress-bar -->
               
               
               <div class="ou-content2">
-                <h2>Call us</h2>
-              <p>To tell us about your start complaint or appeal call (department name from spreadsheet) on:</p>
-
-              <p class="ou-tel">01245 42319              </p>
-              <p>Opening hours</p>
               
-              <ul>
-                <li>Mon to Fri 08:00-20:00</li>
-                <li>Sat 09:00-17:00</li>
-                </ul>
-              <p>We take your concerns seriously and will do our best to put things right for you.</p>
 
-              <div class="box-wizard">
-                <h2>What will happen next?</h2>
-                <p>You’ll receive an automated response email from us confirming receipt of your complaint or appeal and we will provide you with a unique reference number in case you need to discuss anything further with us.</p>
-                <p>We’ll investigate your complaint or appeal with the relevant departments to ensure we have fully understood the issue. We may need to contact you by phone during this time to clarify any points.</p>
-                <p>This process will be dealt with as speedily as possible but it may take up to 10 working days to provide a formal outcome. You’ll receive an outcome email from us and we’ll provide you with a unique reference number in case you need to discuss anything further with us.</p>
-                <p>Find out more about how we handle complaints and appeals in our <a href="http://www.open.ac.uk/students/charter/essential-documents/complaints-and- appeals">Student complaints and appeals procedure</a></p>
-              </div>
+              <!--<p><a href="http://test.experienceux.co.uk/7EO6RT/#p=what_stage_are_you_at_">SOURCE MATERIAL</a></p>-->
+              
+                            
+             
+                <h2>Follow up an existing complaint or appeal</h2>
 
+                <p>Have you already contacted the OU about your complaint or appeal, and received an outcome message? If you want to take things further, use your reference number to continue here.</p>
+                
+                
+                
+                <div class="wizard-form wizard-ouforms">
+                  <div class="ouforms">
+                        <form method="POST" action="" accept-charset="UTF-8">
+                        <input name="_token" type="hidden" value="">
+                        
+                        <fieldset>
+                          <div class="field-container field-input no-title " id="fieldContainer_ref">
+                              <div class="input-container input-text">
+                                <div class="label-container">
+                                  <label for="ref" id="fieldLabel-ref" aria-required="true">Reference number <span class="validation_label required">Required</span></label>
+                                </div>
+                                <input id="ref" placeholder="eg. 1-0123456789" aria-labelledby="fieldLabel-email" name="ref" type="text">
+                                <p class="ouforms-helper-toggle"><a href="#">Where can I find this?</a></p>
+                                <div class="ouforms-helper-text">
+                                <p>You will have received an outcome email within 10 days of making your complaint or appeal to the OU.  You should have been provided with a reference number either in the subject line or at in the response itself. It starts with a 1-, followed by 10 digits, eg 1-3215436789.  Thank you for  helping us to follow up your complaint or appeal efficiently.</p>
+                                </div>
+                                
+                              </div>
+                          </div>
+                          
+                          
+                        <input type="submit" value="Continue" class="ou-button-last">
+                        
+                        </fieldset>
+                        
+                        
+                        </form>
+                  </div>
+                </div>
 
-             </div> <!-- end ou-content2 -->
+				<p><a href="start.html">Back</a></p>
+            
+             </div> 
+            <!-- end ou-content2 -->
               
               <!-- @CONTENT-END -->
+              
             
             </div>
           </div>
@@ -186,6 +194,21 @@
   <script src="http://www2.open.ac.uk/students/help/js/jquery-ui-1.10.3.custom.min.js"></script>
   <script src="http://www2.open.ac.uk/students/help/js/main.js"></script>
   <!-- /Application JS -->
+
+
+    <!-- added by ST temporary -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        
+        $(".ouforms-helper-text").hide();
+        $(".ouforms-helper-toggle").click(function(){
+            $(".ouforms-helper-text").slideToggle("fast");
+        return false;
+        })
+        
+    });    
+    </script>
 
 </body>
 </html>
