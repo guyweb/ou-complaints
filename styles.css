@@ -9,6 +9,8 @@
 div.ou-content {padding:0;}
 .ou-content2 {padding:1.8em 2em 1em 2em;}
 
+.ou-wrap-small {width:80%;}
+
 
 /* text */
 
@@ -168,6 +170,8 @@ a.ou-button-back:hover {background-color:#222;}
 @media 
 only screen and (max-width: 767px), 
 only screen and (max-device-width: 767px) {
+
+.ou-wrap-small {width:100%;}
 
 .ou-list-blocks li {
 	width:48%;
